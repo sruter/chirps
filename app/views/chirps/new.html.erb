@@ -1,0 +1,21 @@
+<h1>Make a Chirp</h1>
+<%= form_for @chirp do |f| %>
+  <div>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div>
+    <%= f.label :pic %>
+    <%= f.file_field :pic %>
+  </div>
+
+  <div>
+    <%= f.submit 'Chirp!' %>
+  </div>
+<% end%>
