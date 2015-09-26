@@ -1,24 +1,26 @@
-<h1>Edit this Chirp</h1>
+<div class="container">
+  <h1>Edit this Chirp</h1>
 
-<%= form_for @chirp do |f| %>
+  <%= form_for @chirp do |f| %>
 
-  <div>
-    <%= f.label :author %>
-    <%= f.text_field :author %>
-  </div>
+    <div>
+      <%= f.label :author %>
+      <%= f.text_field :author %>
+    </div>
 
-  <div>
-    <%= f.label :body %>
-    <%= f.text_area :body %>
-  </div>
+    <div>
+      <%= f.label :body %>
+      <%= f.text_area :body %>
+    </div>
 
- <div>
-    <%= f.label :pic %>
-    <%= f.file_field :pic %>
-  </div>
+   <div>
+      <%= f.label :pic %>
+      <%= f.file_field :pic %>
+    </div>
 
-  <div>
-    <%= f.submit 'Save' %>
-  </div>
+    <div>
+      <%= f.submit 'Save' %>
+    </div>
 
-<% end %>
+  <% end %>
+</div>

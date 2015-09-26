@@ -1,11 +1,13 @@
-<h1>All Chirps</h1>
-<%= link_to "Make a new chirp", new_chirp_path %>
-<hr>
-<% @chirps.each do |chirp| %>
-  <p><%= chirp.body %> </p>
-  <%= image_tag chirp.pic.url, width: '200' %>
-  <p>
-     -<i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
-  </p>
-  <%= link_to "Read more", chirp_path(chirp)%>
-<% end -%>
+<div class="container">
+  <h1>All Chirps</h1>
+  <%= link_to "Make a new chirp", new_chirp_path %>
+  <hr>
+  <% @chirps.each do |chirp| %>
+    <p><%= chirp.body %> </p>
+    <%= image_tag chirp.pic.url, width: '200' %>
+    <p>
+       -<i><%= link_to chirp.author, author_chirps_path(chirp.author) %></i>
+    </p>
+    <%= link_to "Read more", chirp_path(chirp)%>
+  <% end -%>
+</div>

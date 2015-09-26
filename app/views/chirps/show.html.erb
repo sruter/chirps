@@ -1,9 +1,11 @@
-<h1>Chirps#show</h1>
-<p><%= @chirp.body %> </p>
-<%= image_tag @chirp.pic.url, width: '600' %>
-<p>
-  -<i><%= @chirp.author %></i>
-</p>
-<%= link_to "Edit this Chirp", edit_chirp_path(@chirp) %>
-<%= link_to "Delete this Chirp", chirp_path(@chirp), method: 'delete' %>
-<%= link_to "See All Chirps", chirps_path %>
+<div class="container">
+  <h1>Chirps#show</h1>
+  <p><%= @chirp.body %> </p>
+  <%= image_tag @chirp.pic.url, width: '600' %>
+  <p>
+    -<i><%= @chirp.author %></i>
+  </p>
+  <%= link_to "Edit this Chirp", edit_chirp_path(@chirp) %>
+  <%= link_to "Delete this Chirp", chirp_path(@chirp), method: 'delete' %>
+  <%= link_to "See All Chirps", chirps_path %>
+</div>
